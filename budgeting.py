@@ -53,7 +53,7 @@ def budgeting(item,tahap, budget):
         temp_budget = budget_queue.pop()
         temp_solution = solution_queue.pop().copy()
 
-        temp_solution.append(temp_pick+1)
+        temp_solution.append(temp_pick)
         # print('Tahap {} - Pick {} - Budget {} - Solution {}'.format(temp_tahap,temp_pick,temp_budget,temp_solution))
 
         if(temp_tahap==0):
